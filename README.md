@@ -1,4 +1,12 @@
 # api spec
+
+### 生成されるドキュメント
+![record10](https://user-images.githubusercontent.com/11643610/40159648-40fe0df8-59e5-11e8-86f2-bdd06dede2f6.gif)
+
+### 開発サーバーを立ててリクエストする例
+![record10](https://user-images.githubusercontent.com/11643610/40159691-6d3c9812-59e5-11e8-99a5-6c24d083b713.gif)
+
+
 ## spec
 - node_version: v8.1.2
 - yarn v1.3.2
