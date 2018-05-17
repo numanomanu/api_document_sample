@@ -1,0 +1,64 @@
+# Group Item
+## Item [/items]
+
+### 新規作成 [POST]
+
++ Request (application/json)
+    + Attributes (object)
+        + title: `カバン` (string, required) - 商品の名前
+
++ Response 201 (application/json)
+    + Attributes (object)
+        + id: `1` (number, required) - itemId
+        + title: `カバン` (string, required) - 商品の名前
+
++ Response 422 (application/json)
++ Response 403 (application/json)
+
+### 一覧取得 [GET]
+
++ Request (application/json)
+
++ Response 200 (application/json)
+    + Attribute (array)
+        + (object)
+            + id: `1` (number, required) - itemId
+            + title: `カバン1` (string, required) - 商品の名前
+        + (object)
+            + id: `2` (number, required) - itemId
+            + title: `カバン2` (string, required) - 商品の名前
+
++ Response 404 (application/json)
+
+
+## Item Detail [/items/{itemId}]
+### 一件取得 [GET]
+
++ Parameters
+    + itemId: `1` (integer) - itemId
+
++ Request (application/json)
+
++ Response 200 (application/json)
+    + Attributes(object)
+        + id: `1` (number, required) - itemId
+        + title: `カバン` (string, required) - 商品の名前
+
++ Response 404 (application/json)
+
+### 更新 [PUT]
+
++ Parameters
+    + itemId: `1` (integer) - itemId
+
++ Request (application/json)
+    + Attributes(object)
+        + title: `綺麗なカバン` (string, required) - 商品の名前
+
++ Response 200 (application/json)
+    + Attributes(object)
+        + id: `1` (number, required) - itemId
+        + title: `綺麗なカバン` (string, required) - 商品の名前
+
++ Response 403 (application/json)
++ Response 404 (application/json)
