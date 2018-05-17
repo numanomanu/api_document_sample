@@ -1,0 +1,16 @@
+{
+  "name": "api_spec",
+  "version": "1.0.0",
+  "description": "api document maker",
+  "author": "TsuyoshiNumano",
+  "license": "ISC",
+  "scripts": {
+    "dev_server": "node_modules/.bin/drakov -f 'src/**/*.apib' --watch -p 3002  --autoOptions",
+    "build": "node_modules/.bin/aglio -i src/*.apib -o index.html"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "aglio": "^2.3.0",
+    "drakov": "^1.0.4"
+  }
+}
